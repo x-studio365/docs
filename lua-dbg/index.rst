@@ -1,4 +1,4 @@
-x-studio365 Lua调试功能
+x-studio365 - Lua调试篇
 =============
 
 .. toctree::
