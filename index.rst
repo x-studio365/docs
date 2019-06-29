@@ -8,7 +8,7 @@ Scintilla版本: 4.1.5, Cocos2d-x引擎版本3.15, Spine运行库版本3.6, Drag
 * x-studio365 文档
   + `English<https://docs.x-studio365.com/en/latest/>`_
   + `简体中文<https://docs.x-studio365.com/zh_CN/latest/>`_
-  + `下载PDF<https://github.com/SeayXu/>`_
+  + `下载PDF<http://readthedocs.org/projects/x-studio365/downloads/pdf/latest/>`_
 
 目录:
 ^^^^^
