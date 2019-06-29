@@ -17,7 +17,7 @@ Scintilla版本: 4.1.5, Cocos2d-x引擎版本3.15, Spine运行库版本3.6, Drag
 .. toctree::
     :maxdepth: 2
     :glob:
-    
+
     coding/index
     lua-dbg/index
     ui-editing/index
