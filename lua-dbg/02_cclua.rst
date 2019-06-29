@@ -1,2 +1,2 @@
-x-studio365 - Cocos2dx-Lua调试
+x-studio365 - Cocos2d-x Lua调试
 =============
