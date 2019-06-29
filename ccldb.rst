@@ -1,2 +1,2 @@
-调试Cocos2dx-Lua游戏
+Cocos2dx-Lua调试
 =============

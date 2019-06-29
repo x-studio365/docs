@@ -5,7 +5,7 @@ x-studio365 IDE 官方中文文档
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: First steps
+   :caption: x-studio365 IDE
 
    ccldb
    unityldb
