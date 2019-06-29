@@ -5,6 +5,11 @@ x-studio365 IDE 官方中文文档
 支持Cocos2d-x场景（UI）和2D粒子编辑，屏幕适配预览功能（让手动适配问题彻底解放）。
 Scintilla版本: 4.1.5, Cocos2d-x引擎版本3.15, Spine运行库版本3.6, DragonBones运行库版本5.5。*
 
+* x-studio365 文档
+  + `English<https://docs.x-studio365.com/en/latest/>`_
+  + `简体中文<https://docs.x-studio365.com/zh_CN/latest/>`_
+  + `下载PDF<https://github.com/SeayXu/>`_
+
 目录:
 ^^^^^
 
