@@ -1,108 +1,99 @@
 # -*- coding: utf-8 -*-
+#
+# x-studio365 documentation build configuration file
 
-from __future__ import division, print_function, unicode_literals
-
-import os
 import sys
-from configparser import RawConfigParser
+import os
+
+# -- General configuration ------------------------------------------------
+
+needs_sphinx = '1.3'
+
+# Sphinx extension module names and templates location
+sys.path.append(os.path.abspath('extensions'))
+extensions = ['sphinx_tabs.tabs', 'sphinx.ext.imgmath']
+# templates_path = ['_templates']
+
+# You can specify multiple suffix as a list of string: ['.rst', '.md']
+source_suffix = '.rst'
+source_encoding = 'utf-8-sig'
+
+# The master toctree document
+master_doc = 'index'
+
+# General information about the project
+project = 'x-studio365'
+copyright = 'Copyright © 2019 x-studio365. All rights reserved.'
+author = 'HALX99'
+
+# Version info for the project, acts as replacement for |version| and |release|
+# The short X.Y version
+version = 'latest'
+# The full version, including alpha/beta/rc tags
+release = 'latest'
+
+language = 'zh_CN'
+is_i18n = tags.has('i18n')
+
+exclude_patterns = ['_build']
+
+# Pygments (syntax highlighting) style to use
+pygments_style = 'sphinx'
+
+# -- Options for HTML output ----------------------------------------------
+
+# on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 import sphinx_rtd_theme
-
-sys.path.insert(0, os.path.abspath('..'))
-sys.path.append(os.path.dirname(__file__))
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "readthedocs.settings.dev")
-
-from django.conf import settings
-from django.utils import timezone
-
-import django
-django.setup()
-
-
-def get_version():
-    """Return package version from setup.cfg."""
-    config = RawConfigParser()
-    config.read(os.path.join('..', 'setup.cfg'))
-    return config.get('metadata', 'version')
-
-
-sys.path.append(os.path.abspath('_ext'))
-extensions = [
-    'sphinx.ext.autosectionlabel',
-    'sphinx.ext.autodoc',
-    'sphinx.ext.intersphinx',
-    'sphinxcontrib.httpdomain',
-    'djangodocs',
-    'doc_extensions',
-    'sphinx_tabs.tabs',
-    'sphinx-prompt',
-    'recommonmark',
-    'notfound.extension',
-]
-templates_path = ['_templates']
-
-source_suffix = ['.rst', '.md']
-
-master_doc = 'index'
-project = u'Read the Docs'
-copyright = '2010-{}, Read the Docs, Inc & contributors'.format(
-    timezone.now().year
-)
-version = get_version()
-release = version
-exclude_patterns = ['_build']
-default_role = 'obj'
-intersphinx_mapping = {
-    'python': ('https://python.readthedocs.io/en/latest/', None),
-    'django': ('https://django.readthedocs.io/en/1.11.x/', None),
-    'sphinx': ('https://sphinx.readthedocs.io/en/latest/', None),
-}
-htmlhelp_basename = 'ReadTheDocsdoc'
-latex_documents = [
-    ('index', 'ReadTheDocs.tex', u'Read the Docs Documentation',
-     u'Eric Holscher, Charlie Leifer, Bobby Grace', 'manual'),
-]
-man_pages = [
-    ('index', 'read-the-docs', u'Read the Docs Documentation',
-     [u'Eric Holscher, Charlie Leifer, Bobby Grace'], 1)
-]
-
-exclude_patterns = [
-    # 'api' # needed for ``make gettext`` to not die.
-]
-
-language = 'en'
-
-locale_dirs = [
-    'locale/',
-]
-gettext_compact = False
-
 html_theme = 'sphinx_rtd_theme'
-html_static_path = ['_static']
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-html_logo = 'img/logo.svg'
+if on_rtd:
+    using_rtd_theme = True
+
+# Theme options
 html_theme_options = {
-    'logo_only': True,
-    'display_version': False,
+    # 'typekit_id': 'hiw1hhg',
+    # 'analytics_id': '',
+    # 'sticky_navigation': True  # Set to False to disable the sticky nav while scrolling.
+    'logo_only': True,  # if we have a html_logo below, this shows /only/ the logo with no title text
+    'collapse_navigation': False,  # Collapse navigation (False makes it tree-like)
+    # 'display_version': True,  # Display the docs version
+    # 'navigation_depth': 4,  # Depth of the headers shown in the navigation bar
 }
 
-# Activate autosectionlabel plugin
-autosectionlabel_prefix_document = True
-
-# sphinx-notfound-page
-# https://github.com/rtfd/sphinx-notfound-page
-notfound_context = {
-    'title': 'Page Not Found',
-    'body': '''
-<h1>Page Not Found</h1>
-
-<p>Sorry, we couldn't find that page.</p>
-
-<p>Try using the search box or go to the homepage.</p>
-''',
+# VCS options: https://docs.readthedocs.io/en/latest/vcs.html#github
+html_context = {
+    "display_github": not is_i18n, # Integrate GitHub
+    "github_user": "x-studio365", # Username
+    "github_repo": "docs", # Repo name
+    "github_version": "master", # Version
+    "conf_py_path": "/", # Path in the checkout to the docs root
 }
 
+html_logo = 'img/docs_logo.png'
 
-def setup(app):
-    app.add_stylesheet('css/sphinx_prompt_css.css')
+# Output file base name for HTML help builder
+htmlhelp_basename = 'x-studio365-docs'
+
+# -- Options for reStructuredText parser ----------------------------------
+
+# Enable directives that insert the contents of external files
+file_insertion_enabled = False
+
+# -- Options for LaTeX output ---------------------------------------------
+
+# Grouping the document tree into LaTeX files. List of tuples
+# (source start file, target name, title,
+#  author, documentclass [howto, manual, or own class]).
+latex_documents = [
+  (master_doc, 'x-studio365-docs.tex', 'x-studio365 Documentation',
+   'HALX99', 'manual'),
+]
+
+# -- Options for linkcheck builder ----------------------------------------
+
+# disable checking urls with about.html#this_part_of_page anchors
+linkcheck_anchors = False
+
+linkcheck_timeout = 10
