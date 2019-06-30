@@ -23,7 +23,7 @@ master_doc = 'index'
 
 # General information about the project
 project = 'x-studio365'
-copyright = 'Copyright © 2019 x-studio365. All rights reserved.'
+copyright = '2014-2019 x-studio365. All rights reserved.'
 author = 'HALX99'
 
 # Version info for the project, acts as replacement for |version| and |release|
