@@ -37,10 +37,10 @@ x-studio365 - Cocos2d-x Lua调试
 
 * 如果通过以上设置后，启动调试游戏闪退，请尝试删除exe同目录下的.dcache后缀文件后再重试
 
-.. |figure_1| image:: ../img/s1_01.png
-.. |figure_2a| image:: ../img/s1_02a.png
-.. |figure_2b| image:: ../img/s1_02b.png
-.. |figure_3| image:: ../img/s1_03.png
-.. |figure_4a| image:: ../img/s1_04a.png
-.. |figure_4b| image:: ../img/s1_04b.png
+.. |figure_1| image:: ../img/c2s1_01.png
+.. |figure_2a| image:: ../img/c2s1_02a.png
+.. |figure_2b| image:: ../img/c2s1_02b.png
+.. |figure_3| image:: ../img/c2s1_03.png
+.. |figure_4a| image:: ../img/c2s1_04a.png
+.. |figure_4b| image:: ../img/c2s1_04b.png
 
