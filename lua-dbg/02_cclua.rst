@@ -17,7 +17,7 @@ x-studio365 - Cocos2d-x Lua调试
 
 #. 配置调试启动参数，通过软件菜单【调试】【调试设置】打开调试设置对话框，
 修改工作目录为client, 设置调试 参数为:
--workdir $(ProjectDir)client -file $(ProjectDir)client/base/src/main.lua
+``-workdir $(ProjectDir)client -file $(ProjectDir)client/base/src/main.lua``
 如图所示
 
 点击保存工程按钮，保存调试工程，下次可在最近工程中打开，如图所示
