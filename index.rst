@@ -1,12 +1,12 @@
 x-studio365软件文档
 ====================
 *x-studio365是一款强大的开发人员IDE；支持Unity32/64(slua, ulua/tolua, xlua)和Cococ2d-x Lua调试。
-支持类似VSCode等现代代码编辑的多种语言代码编辑功能，如打开文件夹，自动完成，自动识别UTF-8编码，自动识别换行符等。 
+支持类似VSCode等现代代码编辑的多种语言代码编辑功能，如打开文件夹，自动完成，自动识别UTF-8编码，自动识别换行符等。
 支持Cocos2d-x场景（UI）和2D粒子编辑，屏幕适配预览功能（让手动适配问题彻底解放）。
 Scintilla版本: 4.1.5, Cocos2d-x引擎版本3.15, Spine运行库版本3.6, DragonBones运行库版本5.5。*
 
 * x-studio365软件文档
-  
+
   + |Build Status|
   + `English <https://docs.x-studio365.com/en/latest/>`_
   + `简体中文 <https://docs.x-studio365.com/zh_CN/latest/>`_
@@ -29,6 +29,3 @@ Scintilla版本: 4.1.5, Cocos2d-x引擎版本3.15, Spine运行库版本3.6, Drag
     shortcuts
 
 .. |Build Status| image:: https://readthedocs.org/projects/x-studio365/badge/?version=latest
-
-:target: https://docs.x-studio365.com/zh_CN/latest/?badge=latest
-:alt: Documentation Status
