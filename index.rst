@@ -28,5 +28,7 @@ Scintilla版本: 4.1.5, Cocos2d-x引擎版本3.15, Spine运行库版本3.6, Drag
     advanced/index
     shortcuts
 
+.. |Build Status| image:: https://readthedocs.org/projects/x-studio365/badge/?version=latest
 
-.. |Build Status| image:: https://readthedocs.org/projects/pip/badge/?version=latest&style=flat
+:target: https://docs.x-studio365.com/zh_CN/latest/?badge=latest
+:alt: Documentation Status
