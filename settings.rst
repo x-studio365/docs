@@ -92,5 +92,5 @@ x-studio365 - 软件配置
    * 下次启动生效的配置: ``config-settings``, ``designsize-list``
 
 
-| .. | figure_1 | image:: img/c6s1_01a.png |
-| .. | figure_2 | image:: img/c6s1_01b.png |
+.. |figure_1| image:: img/c6s1_01a.png
+.. |figure_2| image:: img/c6s1_01b.png
