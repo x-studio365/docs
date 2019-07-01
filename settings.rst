@@ -3,11 +3,15 @@ x-studio365 - 软件配置
 
 1. 打开软件配置
 
-   通过软件主菜单【文件】【打开】【打开软件配置文件】即可快速打开软件配置进行编辑。
+   通过软件主菜单【文件】【打开】【打开软件配置文件】即可快速打开软件配置进行编辑，如图所示：
+
+   |figure_1|
+
+   |figure_2|
 
 #. 软件各配置说明
 
-   * config-settings各项配置说明
+   * ``config-settings`` 属性说明
 
     +-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
     |                 属性                    |                                                              功能                                                              |
@@ -71,10 +75,22 @@ x-studio365 - 软件配置
     | splitLogLines                           | 是否分割日志行，以启用按行过滤，默认值0                                                                                        |
     +-----------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
-   * ClangFormat-9.0格式化代码风格配置 ``clang-format-options/fallback-style`` 取值
+   * ``clang-format-options/fallback-style`` ClangFormat-9.0格式化fallback代码风格配置，可取值：
 
     ``Microsoft, LLVM, Chromium, Google, Mozilla, WebKit``
+
+    详见Clang-Format官方文档：https://clang.llvm.org/docs/ClangFormat.html
 
    * ``luacheck-params`` 执行Lua代码静态检查参数, 具体可查看Luacheck文档：https://luacheck.readthedocs.io/en/stable/
 
    * ``designsize-list`` 添加软件UI编辑设计尺寸支持，根据需求随意添加
+
+#. 配置生效说明
+
+   * 立即生效的配置: ``clang-format-options/fallback-style``, ``luacheck-params``
+
+   * 下次启动生效的配置: ``config-settings``, ``designsize-list``
+
+
+.. |figure_1| image:: img/c6s1_01a.png
+.. |figure_2| image:: img/c6s1_01b.png
