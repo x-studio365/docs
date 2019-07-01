@@ -22,7 +22,7 @@ source_encoding = 'utf-8-sig'
 master_doc = 'index'
 
 # General information about the project
-project = 'x-studio365'
+project = 'x-studio365 Documentation'
 copyright = '2014-2019 x-studio365. All rights reserved.'
 author = 'HALX99'
 
