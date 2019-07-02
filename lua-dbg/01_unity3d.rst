@@ -1,7 +1,7 @@
 x-studio365 - Unity3D Lua调试
 =============================
 
-Unity Lua调试方式是附加到Unity进程，和VS调试Unity C#类似, xLua,slua,tolua通用
+.. note:: Unity Lua调试方式是附加到Unity进程，和VS调试Unity C#类似, xLua,slua,tolua通用
 
 -----------
 基本步骤

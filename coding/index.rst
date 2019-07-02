@@ -24,7 +24,7 @@ x-studio365 - 代码编辑篇
 * 支持Ctrl+B调用 `luacheck <https://github.com/mpeterv/luacheck>`_ 对Lua代码进行静态分析
 * 支持Ctrl+/注释Lua代码
 * 支持以二进制Ascii视图查看二进制文件
-* 支持快速打开和保存100M左右的大文件
+* **支持快速打开和保存100M左右的大文件**
 * 内置5种代码主题，通过Ctrl+Alt+Num9进行切换
 * 集成Clang-Format-9.0, 可通过快捷键Ctrl+I格式化C++,Java等代码
 * 高性能的输出窗口，输出窗口支持过滤
