@@ -14,5 +14,6 @@ x-studio365 - Lua调试篇
 
     01_unity3d
     02_cclua
+    03_olua
 
 .. |figure_1| image:: ../img/c2s0_tip01.png
