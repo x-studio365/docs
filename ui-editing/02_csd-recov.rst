@@ -39,6 +39,7 @@ x-studio365 - CSD恢复
 
    |figure_6|
 
+.. note:: 目前只支持导入CocosStudio2.x发布的.csb/json, .json/.csb均可以已纯文本方式打开查看版本信息。
 
 .. |figure_1| image:: ../img/c3s2_01.png
 .. |figure_2| image:: ../img/c3s2_02a.png
