@@ -3,6 +3,7 @@ x-studio365 - CSD恢复
 
 .. important:: ``导入时选择目录`` + ``csb引用图片相对路径`` = ``图片在磁盘的绝对路径``；**只有符合这条规则，导入后，软件才可以正常加载到图片。**
 
+.. note:: 目前只支持导入CocosStudio2.x发布的.csb/json, .json/.csb均可以以纯文本方式打开查看版本信息。
 
 1. 通过软件主菜单【文件】【新建工程】新建一个空UI工程，如图所示：
 
@@ -39,7 +40,6 @@ x-studio365 - CSD恢复
 
    |figure_6|
 
-.. note:: 目前只支持导入CocosStudio2.x发布的.csb/json, .json/.csb均可以以纯文本方式打开查看版本信息。
 
 .. |figure_1| image:: ../img/c3s2_01.png
 .. |figure_2| image:: ../img/c3s2_02a.png
