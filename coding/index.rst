@@ -34,7 +34,7 @@ x-studio365 - 代码编辑篇
 ---------------------
 2. 修改代码编辑器字体
 ---------------------
-软件默认代码编辑器字体是 ``Source Code Pro``, 如果不喜欢可以通过快捷键 ``Ctrl+Shift+P`` 呼出打开快捷命令对话框，然后选择Open Current Theme File打开
+软件默认代码编辑器字体是 ``Source Code Pro``, 如果不喜欢可以通过快捷键 ``Ctrl+Shift+P`` 打开快捷命令对话框，然后选择Open Current Theme File打开
 当前代码主题配置文件，找到 ``global.font-face`` ， 修改字体后保存，再通过 ``Ctrl+Alt+Num9`` 重新选择当前代码主题即可，如图所示：
 
 |figure_1|
