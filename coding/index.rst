@@ -32,7 +32,7 @@ x-studio365 - 代码编辑篇
 * 支持根据luacheck警告、msvc编译错误、android ndk编译错误等信息在输出窗口快速定位文件
 
 -----------------
-如何修改代码字体?
+修改代码字体
 -----------------
 软件默认字体是 ``Source Code Pro``, 如果不喜欢可以通过快捷键 ``Ctrl+Shift+P`` 呼出打开快捷命令对话框，然后选择Open Current Theme File打开
 当前代码主题配置文件，找到 ``global.font-face`` ， 修改字体后保存，再通过 ``Ctrl+Alt+Num9`` 重新选择当前代码主题即可，如图所示：
