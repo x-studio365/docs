@@ -24,8 +24,8 @@
 
  * ``-dc=.ttf;.mp3;.ogg``:   指定直接拷贝文件类型，某些类型文件可能不需要加密
 
- 示例命令:  ``"%XSTUDIO365_INSTDIR%\x-studio365.exe" -c -enc -cfg=D:\encrypt-cfg.xml -i=D:\OriginalRes1 -o=D:\EncryptedRes1``
- 更多参数，请使用 ``"%XSTUDIO365_INSTDIR%\x-studio365.exe" -c --help`` 查看
+ 示例命令： ``"%XSTUDIO365_INSTDIR%\x-studio365.exe" -c -enc -cfg=D:\encrypt-cfg.xml -i=D:\OriginalRes1 -o=D:\EncryptedRes1``
+ 更多参数，请使用如下命令查看： ``"%XSTUDIO365_INSTDIR%\x-studio365.exe" -c --help``
 
 3. 注意事项
 
