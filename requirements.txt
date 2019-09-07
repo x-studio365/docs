@@ -1,4 +1,4 @@
 -r requirements/pip.txt
-sphinx_rtd_theme>=0.3.1
+sphinx_rtd_theme>=0.4.3
 pygments-lexer-solidity>=0.3.1
-sphinx-tabs>=1.1.11
+sphinx-tabs>=1.1.12
