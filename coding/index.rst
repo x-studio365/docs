@@ -153,28 +153,27 @@ x-studio365 - 代码编辑篇
 
   -- 可见字符，直接输入字符即可, 例如'E','D'等
   -- 以下是编辑器支持的非可见字符按键:
-  scikeys = {
-    SCK_PRIOR = 306,
-    SCK_BACK = 8,
-    SCK_TAB = 9,
-    SCK_ADD = 310,
-    SCK_RETURN = 13,
-    SCK_DOWN = 300,
-    SCK_HOME = 304,
-    SCK_DELETE = 308,
-    SCK_WIN = 313,
-    SCK_UP = 301,
-    SCK_LEFT = 302,
-    SCK_RIGHT = 303,
-    SCK_END = 305,
-    SCK_NEXT = 307,
-    SCK_INSERT = 309,
-    SCK_ESCAPE = 7,
-    SCK_SUBTRACT = 311,
-    SCK_DIVIDE = 312,
-    SCK_RWIN = 314,
-    SCK_MENU = 315,
-  }
+  
+    'PRIOR',
+    'BACK',
+    'TAB',
+    'ADD',
+    'RETURN',
+    'DOWN',
+    'HOME',
+    'DELETE',
+    'WIN',
+    'UP',
+    'LEFT',
+    'RIGHT',
+    'END',
+    'NEXT',
+    'INSERT',
+    'ESCAPE',
+    'SUBTRACT',
+    'DIVIDE',
+    'RWIN',
+    'MENU',
 
 
 .. |figure_1| image:: ../img/c1_01.png
