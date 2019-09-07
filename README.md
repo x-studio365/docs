@@ -3,3 +3,7 @@
 The Simplified Chinese Documentation repo of x-studio365 IDE, for english please see: [docs-437](https://github.com/x-studio365/docs-437)
 
 **pitfall: Don't add Documentation Status to index.rst, otherwise, build pdf will be failed.**
+
+### Sphinx references
+https://github.com/godotengine/godot-docs  
+https://github.com/scrapinghub/splash
