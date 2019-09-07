@@ -2,7 +2,7 @@ x-studio365 - 代码编辑篇
 ========================
 
 -------------------
-1. 代码编辑功能概览
+1.代码编辑功能概览
 -------------------
 
 * **支持自动识别UTF-8、GBK等编码, 没有vs、vsc、xcode、as之流带来的乱码烦恼**
@@ -32,11 +32,148 @@ x-studio365 - 代码编辑篇
 * 支持根据luacheck警告、msvc编译错误、android ndk编译错误等信息在输出窗口快速定位文件
 
 ---------------------
-2. 修改代码编辑器字体
+2.修改代码编辑器字体
 ---------------------
 软件默认代码编辑器字体是 ``Source Code Pro``, 如果不喜欢可以通过快捷键 ``Ctrl+Shift+P`` 打开快捷命令对话框，然后选择Open Current Theme File打开
 当前代码主题配置文件，找到 ``global.font-face`` ， 修改字体后保存即可立即生效，如图所示：
-
 |figure_1|
+
+---------------------
+3.修改代码编辑器快捷键
+---------------------
+3.1.编辑快捷键建配置文件
+------------------
+通过Ctrl+Shift+P呼出快捷入口，选择 ``Edit Key Bindings Settings`` 打开并编辑配置文件,
+如图所示:
+
+3.2.编辑器支持的命令列表
+----------------------
+ .. code:: lua
+ scicmds = {
+    SCI_LINEDOWN = 2300,
+    SCI_LINEDOWNEXTEND = 2301,
+    SCI_LINEDOWNRECTEXTEND = 2426,
+    SCI_LINESCROLLDOWN = 2342,
+    SCI_LINEUP = 2302,
+    SCI_LINEUPEXTEND = 2303,
+    SCI_LINEUPRECTEXTEND = 2427,
+    SCI_LINESCROLLUP = 2343,
+    SCI_PARADOWN = 2413,
+    SCI_PARADOWNEXTEND = 2414,
+    SCI_PARAUP = 2415,
+    SCI_PARAUPEXTEND = 2416,
+    SCI_CHARLEFT = 2304,
+    SCI_CHARLEFTEXTEND = 2305,
+    SCI_CHARLEFTRECTEXTEND = 2428,
+    SCI_CHARRIGHT = 2306,
+    SCI_CHARRIGHTEXTEND = 2307,
+    SCI_CHARRIGHTRECTEXTEND = 2429,
+    SCI_WORDLEFT = 2308,
+    SCI_WORDLEFTEXTEND = 2309,
+    SCI_WORDRIGHT = 2310,
+    SCI_WORDRIGHTEXTEND = 2311,
+    SCI_WORDLEFTEND = 2439,
+    SCI_WORDLEFTENDEXTEND = 2440,
+    SCI_WORDRIGHTEND = 2441,
+    SCI_WORDRIGHTENDEXTEND = 2442,
+    SCI_WORDPARTLEFT = 2390,
+    SCI_WORDPARTLEFTEXTEND = 2391,
+    SCI_WORDPARTRIGHT = 2392,
+    SCI_WORDPARTRIGHTEXTEND = 2393,
+    SCI_HOME = 2312,
+    SCI_HOMEEXTEND = 2313,
+    SCI_HOMERECTEXTEND = 2430,
+    SCI_HOMEDISPLAY = 2345,
+    SCI_HOMEDISPLAYEXTEND = 2346,
+    SCI_HOMEWRAP = 2349,
+    SCI_HOMEWRAPEXTEND = 2450,
+    SCI_VCHOME = 2331,
+    SCI_VCHOMEEXTEND = 2332,
+    SCI_VCHOMERECTEXTEND = 2431,
+    SCI_VCHOMEWRAP = 2453,
+    SCI_VCHOMEWRAPEXTEND = 2454,
+    SCI_VCHOMEDISPLAY = 2652,
+    SCI_VCHOMEDISPLAYEXTEND = 2653,
+    SCI_LINEEND = 2314,
+    SCI_LINEENDEXTEND = 2315,
+    SCI_LINEENDRECTEXTEND = 2432,
+    SCI_LINEENDDISPLAY = 2347,
+    SCI_LINEENDDISPLAYEXTEND = 2348,
+    SCI_LINEENDWRAP = 2451,
+    SCI_LINEENDWRAPEXTEND = 2452,
+    SCI_DOCUMENTSTART = 2316,
+    SCI_DOCUMENTSTARTEXTEND = 2317,
+    SCI_DOCUMENTEND = 2318,
+    SCI_DOCUMENTENDEXTEND = 2319,
+    SCI_PAGEUP = 2320,
+    SCI_PAGEUPEXTEND = 2321,
+    SCI_PAGEUPRECTEXTEND = 2433,
+    SCI_PAGEDOWN = 2322,
+    SCI_PAGEDOWNEXTEND = 2323,
+    SCI_PAGEDOWNRECTEXTEND = 2434,
+    SCI_STUTTEREDPAGEUP = 2435,
+    SCI_STUTTEREDPAGEUPEXTEND = 2436,
+    SCI_STUTTEREDPAGEDOWN = 2437,
+    SCI_STUTTEREDPAGEDOWNEXTEND = 2438,
+    SCI_DELETEBACK = 2326,
+    SCI_DELETEBACKNOTLINE = 2344,
+    SCI_DELWORDLEFT = 2335,
+    SCI_DELWORDRIGHT = 2336,
+    SCI_DELWORDRIGHTEND = 2518,
+    SCI_DELLINELEFT = 2395,
+    SCI_DELLINERIGHT = 2396,
+    SCI_LINEDELETE = 2338,
+    SCI_LINECUT = 2337,
+    SCI_LINECOPY = 2455,
+    SCI_LINETRANSPOSE = 2339,
+    SCI_LINEREVERSE = 2354,
+    SCI_LINEDUPLICATE = 2404,
+    SCI_LOWERCASE = 2340,
+    SCI_UPPERCASE = 2341,
+    SCI_CANCEL = 2325,
+    SCI_EDITTOGGLEOVERTYPE = 2324,
+    SCI_NEWLINE = 2329,
+    SCI_FORMFEED = 2330,
+    SCI_TAB = 2327,
+    SCI_BACKTAB = 2328,
+    SCI_SELECTIONDUPLICATE = 2469,
+    SCI_VERTICALCENTRECARET = 2619,
+    SCI_MOVESELECTEDLINESUP = 2620,
+    SCI_MOVESELECTEDLINESDOWN = 2621,
+    SCI_SCROLLTOSTART = 2628,
+    SCI_SCROLLTOEND = 2629,
+    SCI_QUICKADDNEXT = 2911,
+ }
+
+3.3.编辑器支持的按键代码列表
+--------------------------
+ .. code:: lua
+ -- 可见字符，直接输入字符即可, 例如'E','D'等
+ 
+ -- 以下是编辑器支持的非可见字符按键:
+
+ scikeys = {
+    SCK_PRIOR = 306,
+    SCK_BACK = 8,
+    SCK_TAB = 9,
+    SCK_ADD = 310,
+    SCK_RETURN = 13,
+    SCK_DOWN = 300,
+    SCK_HOME = 304,
+    SCK_DELETE = 308,
+    SCK_WIN = 313,
+    SCK_UP = 301,
+    SCK_LEFT = 302,
+    SCK_RIGHT = 303,
+    SCK_END = 305,
+    SCK_NEXT = 307,
+    SCK_INSERT = 309,
+    SCK_ESCAPE = 7,
+    SCK_SUBTRACT = 311,
+    SCK_DIVIDE = 312,
+    SCK_RWIN = 314,
+    SCK_MENU = 315,
+ }
+
 
 .. |figure_1| image:: ../img/c1_01.png
