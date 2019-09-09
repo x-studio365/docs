@@ -44,7 +44,7 @@ x-studio365 - 代码编辑篇
 ---------------------
 3.1.编辑快捷键建配置文件
 ------------------
-通过Ctrl+Shift+P呼出快捷入口，选择 ``Edit Key Bindings Settings`` 打开并编辑快捷键配置文件保存后立即生效,
+通过Ctrl+Shift+P调出快捷菜单，选择 ``Edit Key Bindings Settings`` 打开并编辑快捷键配置文件保存后立即生效,
 如图所示:
 |figure_2|
 
@@ -191,6 +191,13 @@ x-studio365 - 代码编辑篇
     'F11',
     'F12',
 
+-------------------------
+3.当前编程语言自动完成配置
+-------------------------
+例如修改Lua, 则先随便打开一个Lua文件，然后通过Ctrl+Shift+P调出快捷菜单，选择 ``Edit Current AutoComplete Settings`` 打开文件编辑相应keyword，保存后重启编辑器生效,
+如图所示:
+|figure_3|
 
 .. |figure_1| image:: ../img/c1_01.png
 .. |figure_2| image:: ../img/c1_02.png
+.. |figure_3| image:: ../img/c1_03.png
