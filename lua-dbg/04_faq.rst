@@ -7,10 +7,10 @@ A: 在游戏开发过程中，通常都有设计尺寸和设备尺寸以及朝�
 可将这些参数传递给被调试程序，首先在.xsxproj工程文件中添加debug-options/pass-size-args元素，
 值为1，那么启动调试会传递如下格式参数:
 ``--design-size=720x1280 --device-size=640x960 --orientation=landscape or --orientation=portrait``
-解析C++代码如下:
 
 .. code-block:: c++
 
+  /* 解析C++代码参考 */
   namespace xscmdl
   {
     static inline bool check_arg(const char* arg, const char* name) { return 0 == stricmp(arg, name); }
@@ -21,7 +21,7 @@ A: 在游戏开发过程中，通常都有设计尺寸和设备尺寸以及朝�
       n = _Size - 1;
       return 0 == strnicmp(arg, name, n);
     }
-  } // namespace xscmdl
+  }
 
   int main(int argc, char** argv) {
     std::string_view value;
