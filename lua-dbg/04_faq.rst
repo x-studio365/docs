@@ -4,8 +4,8 @@
 Q: 如何传递将设备尺寸参数传递给被调试程序?
 ---------------------------------------
 A: 在游戏开发过程中，通常都有设计尺寸和设备尺寸以及朝向，那么，使用x-studio365启动调试时
-可将这些参数传递给被调试程序，首先在.xsxproj工程文件中添加debug-options/pass-size-args元素，
-值为1，那么启动调试会传递如下格式参数:
+可将这些参数传递给被调试程序，首先在.xsxproj工程文件中添加 ``debug-options`` 节点下添加 ``passing-view-args``
+(10.0.5900.199及之前版本，请添加 ``pass-size-args``) 元素, 值为1，那么调试器会传递如下格式参数:
 ``--design-size=720x1280 --device-size=640x960 --orientation=landscape or --orientation=portrait``
 
 .. code-block:: c++
