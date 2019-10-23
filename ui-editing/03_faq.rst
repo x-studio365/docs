@@ -8,7 +8,7 @@
 
 缺少默认默认资源怎么办？
 ---------------------
-   `点击下载默认资源 <https://x-studio365.gitee.io/xsdl2/CocosStudioDefault.zip>`_ ，解压后将Default文件夹手动复制过去覆盖即可。
+   `点击下载默认资源 <https://simdsoft.gitee.io/xsdl2/CocosStudioDefault.zip>`_ ，解压后将Default文件夹手动复制过去覆盖即可。
 
 
 CocosStudio2.3.3/3.10打不开Armature动画怎么办？

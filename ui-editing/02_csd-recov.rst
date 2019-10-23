@@ -12,7 +12,7 @@ CSD恢复
 
 #. 通过软件主菜单【文件】【导入】【CocosStudio(*.csb/*.json)】导入资源目录
 
-   资源根目录确定方法: 在系统资源管理器右键【Open with x-studio365】打开待导入资源随便一个.csb
+   资源根目录确定方法: 在系统资源管理器右键【Open with x-studio】打开待导入资源随便一个.csb
    如图所示：
 
    |figure_2|

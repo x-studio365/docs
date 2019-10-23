@@ -1,4 +1,4 @@
-x-studio365 - UI编辑篇
+x-studio - UI编辑篇
 ======================
 
 .. toctree::

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# x-studio365 documentation build configuration file
+# x-studio documentation build configuration file
 
 import sys
 import os
@@ -22,8 +22,8 @@ source_encoding = 'utf-8-sig'
 master_doc = 'index'
 
 # General information about the project
-project = 'x-studio365 Documentation'
-copyright = '2014-2019 x-studio365. All rights reserved.'
+project = 'x-studio Documentation'
+copyright = '2014-2019 x-studio. All rights reserved.'
 author = 'HALX99'
 
 # Version info for the project, acts as replacement for |version| and |release|
@@ -65,8 +65,8 @@ html_theme_options = {
 # VCS options: https://docs.readthedocs.io/en/latest/vcs.html#github
 html_context = {
     "display_github": not is_i18n, # Integrate GitHub
-    "github_user": "x-studio365", # Username
-    "github_repo": "docs", # Repo name
+    "github_user": "simdsoft", # Username
+    "github_repo": "xsdocs", # Repo name
     "github_version": "master", # Version
     "conf_py_path": "/", # Path in the checkout to the docs root
 }
@@ -74,7 +74,7 @@ html_context = {
 html_logo = 'img/docs_logo.png'
 
 # Output file base name for HTML help builder
-htmlhelp_basename = 'x-studio365-docs'
+htmlhelp_basename = 'x-studio-docs'
 
 # -- Options for reStructuredText parser ----------------------------------
 
@@ -87,7 +87,7 @@ file_insertion_enabled = False
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'x-studio365-docs.tex', 'x-studio365 Documentation',
+  (master_doc, 'x-studio-docs.tex', 'x-studio Documentation',
    'HALX99', 'manual'),
 ]
 
