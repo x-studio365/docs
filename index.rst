@@ -9,11 +9,11 @@ Scintilla版本: 4.2.0, Cocos2d-x引擎版本3.15, Spine运行库版本3.6, Drag
 
 * x-studio软件文档
 
-  + `English <https://docs.x-studio365.com/en/latest/>`_
-  + `简体中文 <https://docs.x-studio365.com/zh_CN/latest/>`_
-  + `下载PDF <http://readthedocs.org/projects/x-studio365/downloads/pdf/latest/>`_
+  + `English <https://docs.x-studio.net/en/latest/>`_
+  + `简体中文 <https://docs.x-studio.net/zh_CN/latest/>`_
+  + `下载PDF <https://readthedocs.org/projects/xsdocs/downloads/pdf/latest/>`_
 
-* x-studio软件官网：`https://x-studio365.com/ <https://x-studio365.com/>`_
+* x-studio软件官网：`https://x-studio.net/ <https://x-studio.net/>`_
 
 * 为方便描述，文档正文中会将x-studio简称为“软件”
 

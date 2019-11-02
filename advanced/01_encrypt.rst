@@ -14,7 +14,7 @@
 ---------
 使用步骤
 ---------
-1. 下载x-studio软件 https://x-studio365.com/dl.php?host=local 并安装
+1. 下载x-studio软件 https://x-studio.net/dl.php?host=local 并安装
 #. 接下来，就可以使用命令行加密资源了
 
  * ``-cfg=[file]``: 指定加密配置文件，用于加密工具保存加密密钥及其他加密选项
