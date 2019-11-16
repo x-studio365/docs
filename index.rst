@@ -32,5 +32,6 @@ Scintilla版本: 4.2.0, Cocos2d-x引擎版本3.15, Spine运行库版本3.6, Drag
     lua-dbg/index
     ui-editing/index
     advanced/index
+    use-skils
     shortcuts
     settings
