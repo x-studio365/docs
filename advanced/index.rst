@@ -6,3 +6,4 @@ x-studio - 高级篇
     :numbered: 2
 
     01_encrypt
+    02_upgrade
