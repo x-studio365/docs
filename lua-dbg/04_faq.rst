@@ -14,6 +14,7 @@ A: 在游戏开发过程中，通常都有设计尺寸和设备尺寸以及朝�
   namespace xscmdl
   {
     static inline bool check_arg(const char* arg, const char* name) { return 0 == stricmp(arg, name); }
+    static inline bool check_arg(const wchar_t* arg, const wchar_t* name) { return 0 == wcsicmp(arg, name); }
     
     template <size_t _Size>
     static inline bool check_arg(const char* arg, const char (&name)[_Size], size_t& n)
@@ -21,14 +22,25 @@ A: 在游戏开发过程中，通常都有设计尺寸和设备尺寸以及朝�
       n = _Size - 1;
       return 0 == strnicmp(arg, name, n);
     }
+    template <size_t _Size>
+    static inline bool check_arg(const wchar_t* arg, const wchar_t (&name)[_Size], size_t& n)
+    {
+      n = _Size - 1;
+      return 0 == wcsnicmp(arg, name, n);
+    }
   }
 
   int main(int argc, char** argv) {
     std::string_view value;
     size_t len = 0;
+    int w = 0, h = 0;
     for (int i = 0; i < argc; ++i) {
-      if (xscmdl::check_arg(argv[i], "--design-size=", len)) {
+      if (xscmdl::check_arg(argv[i], "--device-size=", len)) {
         value = argv[i] + len;
+        char* mulp = nullptr; // the 'X' pos
+        w = strtol(value.data(), &mulp, 10);
+        if(mulp)
+          h = strtol(mulp + 1, nullptr, 10);
       }
     }
   }
