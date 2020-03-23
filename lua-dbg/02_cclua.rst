@@ -28,6 +28,8 @@ Cocos2d-x Lua调试
 
    |figure_3|
 
+   .. important:: 对于绝大多数cocos2d-x lua版本(quick-lua待验证），调试参数必须配置；这是由于simulator本身设计缺陷。
+
 4. 启动调试
 ***********
    通过以上3步，项目的Lua调试工程就创建成功了，
