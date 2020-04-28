@@ -9,7 +9,7 @@ https://github.com/godotengine/godot-docs
 https://github.com/scrapinghub/splash
 
 ### Install sphinx reST docs preview env
-1. Install Python-3.7.3
-2. Install Python Extensions: sphinx, sphinx_rtd_theme, sphinx_tabs: pip install sphinx sphinx_rtd_theme sphinx_tabs for vscode rst preview. For more detail, see: https://docs.restructuredtext.net/articles/prerequisites.html
-3. Install Microsoft VS Code
-4. Install Microsoft VS Code extension: reStructedText, just search rst
+ 1. Install Python-3.7.x+
+ 2. Install Python Extensions for vscode rst preview: sphinx, sphinx_rtd_theme, sphinx_tabs: ```pip install sphinx sphinx_rtd_theme sphinx_tabs sphinxcontrib-svg2pdfconverter``` 
+ 3. Install Microsoft VS Code  
+ 4. Install Microsoft VS Code extension: ```reStructedText```, just search rst  
