@@ -1,6 +1,8 @@
 CSD恢复
 =====================
 
+.. note:: 视频教程请访问: https://www.bilibili.com/video/BV1Uv411q7nr?t=56
+
 .. important:: ``导入时选择目录`` + ``csb引用图片相对路径`` = ``图片在磁盘的绝对路径``；**只有符合这条规则，导入后，软件才可以正常加载到图片。**
 
 .. important:: 目前只支持导入 ``CocosStudio1.x/2.x/3.10发布的.csb`` 和 ``CocoStudio2.x发布的.json`` , 以纯文本方式打开即可查看版本信息。
