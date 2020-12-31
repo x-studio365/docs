@@ -35,3 +35,4 @@ Scintilla版本: 4.4.0, Cocos2d-x引擎版本3.17.2, Spine运行库版本3.6, Dr
     use-skills
     shortcuts
     settings
+    faq
