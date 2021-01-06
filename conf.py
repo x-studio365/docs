@@ -51,9 +51,6 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 # if on_rtd:
 #    using_rtd_theme = True
 
-# Required theme setup
-html_theme = 'sphinx_material'
-
 # Theme options
 # html_theme_options = {
     # 'typekit_id': 'hiw1hhg',
@@ -64,6 +61,12 @@ html_theme = 'sphinx_material'
     # 'display_version': True,  # Display the docs version
     # 'navigation_depth': 4,  # Depth of the headers shown in the navigation bar
 # }
+
+import sphinx_material
+
+html_theme_path = sphinx_material.html_theme_path()
+html_context = sphinx_material.get_html_context()
+html_theme = "sphinx_material"
 
 # Material theme options (see theme.conf for more information)
 html_theme_options = {
@@ -79,7 +82,7 @@ html_theme_options = {
     'base_url': 'https://docs.x-studio.net/',
 
     # Set the color and the accent color
-    'color_primary': 'blue',
+    'color_primary': 'dark',
     'color_accent': 'light-blue',
 
     # Set the repo location to get a badge with stats
@@ -96,13 +99,13 @@ html_theme_options = {
 
 
 # VCS options: https://docs.readthedocs.io/en/latest/vcs.html#github
-html_context = {
-    "display_github": not is_i18n, # Integrate GitHub
-    "github_user": "simdsoft", # Username
-    "github_repo": "xsdocs", # Repo name
-    "github_version": "master", # Version
-    "conf_py_path": "/", # Path in the checkout to the docs root
-}
+# html_context = {
+    # "display_github": not is_i18n, # Integrate GitHub
+    # "github_user": "simdsoft", # Username
+    # "github_repo": "xsdocs", # Repo name
+    # "github_version": "master", # Version
+    # "conf_py_path": "/", # Path in the checkout to the docs root
+# }
 
 html_logo = 'img/docs_logo.png'
 
