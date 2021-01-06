@@ -45,22 +45,55 @@ pygments_style = 'sphinx'
 # on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
-import sphinx_rtd_theme
-html_theme = 'sphinx_rtd_theme'
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-if on_rtd:
-    using_rtd_theme = True
+# import sphinx_rtd_theme
+# html_theme = 'sphinx_rtd_theme'
+# html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+# if on_rtd:
+#    using_rtd_theme = True
+
+# Required theme setup
+html_theme = 'sphinx_material'
 
 # Theme options
-html_theme_options = {
+# html_theme_options = {
     # 'typekit_id': 'hiw1hhg',
     # 'analytics_id': '',
     # 'sticky_navigation': True  # Set to False to disable the sticky nav while scrolling.
-    'logo_only': True,  # if we have a html_logo below, this shows /only/ the logo with no title text
-    'collapse_navigation': False,  # Collapse navigation (False makes it tree-like)
+    # 'logo_only': True,  # if we have a html_logo below, this shows /only/ the logo with no title text
+    # 'collapse_navigation': False,  # Collapse navigation (False makes it tree-like)
     # 'display_version': True,  # Display the docs version
     # 'navigation_depth': 4,  # Depth of the headers shown in the navigation bar
+# }
+
+# Material theme options (see theme.conf for more information)
+html_theme_options = {
+
+    # Set the name of the project to appear in the navigation.
+    'nav_title': 'x-studio',
+
+    # Set you GA account ID to enable tracking
+    'google_analytics_account': 'UA-202190763188',
+
+    # Specify a base_url used to generate sitemap.xml. If not
+    # specified, then no sitemap will be built.
+    'base_url': 'https://docs.x-studio.net/',
+
+    # Set the color and the accent color
+    'color_primary': 'blue',
+    'color_accent': 'light-blue',
+
+    # Set the repo location to get a badge with stats
+    'repo_url': 'https://github.com/simdsoft/xsdocs',
+    'repo_name': 'GitHub',
+
+    # Visible levels of the global TOC; -1 means unlimited
+    'globaltoc_depth': 3,
+    # If False, expand all TOC entries
+    'globaltoc_collapse': False,
+    # If True, show hidden TOC entries
+    'globaltoc_includehidden': False,
 }
+
 
 # VCS options: https://docs.readthedocs.io/en/latest/vcs.html#github
 html_context = {
