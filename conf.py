@@ -72,7 +72,7 @@ html_theme = "sphinx_material"
 html_theme_options = {
 
     # Set the name of the project to appear in the navigation.
-    'nav_title': 'x-studio',
+    # 'nav_title': 'x-studio',
 
     # Set you GA account ID to enable tracking
     'google_analytics_account': 'UA-202190763188',
